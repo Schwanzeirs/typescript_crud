@@ -61,6 +61,10 @@ export default new class TodosService {
       existedData.name = newData.name
       existedData.visi = newData.visi
       existedData.image = newData.image
+      // todo.name = data.name
+      // todo.visi = data.visi
+      // todo.image = data.image
+      // const result = await this.TodoRepository.save(todo)
 
       const result = await this.TodoRepository.save(existedData)
       return res.status(200).json(result)
